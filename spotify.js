@@ -7,12 +7,12 @@ let songIndex = 0;
 
 let songlist = Array.from(document.getElementsByClassName("list"));
 let songs = [
-  { songname: "WAVY (OFFICIAL VIDEO) KARAN AUJLA | LATEST PUNJABI SONGS 2024", file: "songs/1.mp3", covers: "covers/way.jpg" },
-  { songname: "Afusic - Pal Pal (Official Music Video) Prod", file: "songs/2.mp3", covers: "covers/pal.png" },
-  { songname: "Haseen by Talwinder", file: "songs/3.mp3", covers: "covers/h.jpg" },
-  { songname: "Tension Song - Diljit dosangh", file: "songs/4.mp3", covers: "covers/t.jpg" },
-  { songname: "Jhol", file: "songs/5.mp3", covers: "covers/j.jpg" },
-  { songname: "Guru Randhawa - QATAL - (Official Video)", file: "songs/6.mp3", covers: "covers/q.jpg" },
+  { songname: "WAVY (OFFICIAL VIDEO) KARAN AUJLA | LATEST PUNJABI SONGS 2024", file: "1.mp3", covers: "way.jpg" },
+  { songname: "Afusic - Pal Pal (Official Music Video) Prod", file: "2.mp3", covers: "pal.png" },
+  { songname: "Haseen by Talwinder", file: "3.mp3", covers: "h.jpg" },
+  { songname: "Tension Song - Diljit dosangh", file: "4.mp3", covers: "t.jpg" },
+  { songname: "Jhol", file: "5.mp3", covers: "j.jpg" },
+  { songname: "Guru Randhawa - QATAL - (Official Video)", file: "6.mp3", covers: "q.jpg" },
 
 ];
 
