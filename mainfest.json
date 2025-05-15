@@ -1,0 +1,21 @@
+{
+  "name": "Spotify Clone",
+  "short_name": "Spotify",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#1DB954",
+  "description": "A simple Spotify clone music player.",
+  "icons": [
+    {
+      "src": "sp.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "sp.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

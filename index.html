@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Clone</title>
+  <link rel="icon" href="sp.png" type="image/png" />
+  <link rel="stylesheet" href="spotify.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="mainfest.json">
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-cont">
+      <img src="sp.png" alt="Logo" />
+      <div class="nav2">
+        <a href="#">Home</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="song">
+    <div class="song-list">
+      <h1>Song List</h1>
+      <div class="songs">
+        <!-- Repeatable Song Item -->
+        <div class="list">
+          <img src="covers/way.jpg" alt="Song Cover" class="cover">
+          <div class="heading">
+            <p class="songname">Warriyo - Mortals [NCS Release]</p>
+            <span>02:41</span>
+            <span><i class="fa-solid fa-play songItemPlay"></i></span>
+          </div>
+        </div>
+        <div class="list">
+          <img src="covers/2.jpg" alt="Song Cover" class="cover">
+          <div class="heading">
+            <p class="songname">Warriyo - Mortals [NCS Release]</p>
+            <span>02:27</span>
+            <span><i class="fa-solid fa-play songItemPlay"></i></span>
+          </div>
+        </div>
+        <div class="list">
+          <img src="covers/3.jpg" alt="Song Cover" class="cover">
+          <div class="heading">
+            <p class="songname">Warriyo - Mortals [NCS Release]</p>
+            <span>02:55</span>
+            <span><i class="fa-solid fa-play songItemPlay"></i></span>
+          </div>
+        </div>
+        <div class="list">
+          <img src="covers/4.jpg" alt="Song Cover" class="cover">
+          <div class="heading">
+            <p class="songname">Warriyo - Mortals [NCS Release]</p>
+            <span>05:34</span>
+            <span><i class="fa-solid fa-play songItemPlay"></i></span>
+          </div>
+        </div>
+        <div class="list">
+          <img src="covers/5.jpg" alt="Song Cover" class="cover">
+          <div class="heading">
+            <p class="songname">Warriyo - Mortals [NCS Release]</p>
+            <span>05:34</span>
+            <span><i class="fa-solid fa-play songItemPlay"></i></span>
+          </div>
+        </div>
+        <div class="list">
+          <img src="covers/6.jpg" alt="Song Cover" class="cover">
+          <div class="heading">
+            <p class="songname">Warriyo - Mortals [NCS Release]</p>
+            <span>02:53</span>
+            <span><i class="fa-solid fa-play songItemPlay"></i></span>
+          </div>
+        </div>
+       
+        <!-- End Song Items -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Player Section -->
+  <div class="song-play">
+    <div class="range">
+      <input type="range" id="prog" min="0" max="100" value="0" />
+    </div>
+    <div class="icons">
+      <img src="skip pre.svg" alt="Previous" id="pre">
+      <img src="pause.svg" alt="Pause" id="pause">
+      <img src="skip next.svg" alt="Next" id="next">
+    </div>
+    <div class="gif">
+      <img src="gif.gif" alt="" id="gif">
+      
+    </div>
+  </div>
+
+  <!-- Script Include -->
+  <script src="spotify.js"></script>
+  <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+      .then(() => console.log("Service Worker Registered"))
+      .catch((err) => console.log("Service Worker Error: ", err));
+  }
+</script>
+</body>
+</html>
